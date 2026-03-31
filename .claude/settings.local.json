@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(netstat -ano)",
+      "Bash(ls \"d:/AN-G-WEBSITE/assets/logo\"*)",
+      "Bash(pip install:*)",
+      "Bash(python3 -c \":*)",
+      "Bash(ls -la \"d:/AN-G-WEBSITE/assets/logo\"*)",
+      "Bash(ls \"d:/AN-G-WEBSITE/assets/logo_eng\"*)",
+      "Bash(python -m http.server 3000)",
+      "Bash(ls \"d:/AN-G-WEBSITE/assets/new_ar_logo\"*)",
+      "Bash(ls \"d:/AN-G-WEBSITE/assets/logo_eng_new\"*)",
+      "Bash(ls \"d:/AN-G-WEBSITE/assets/icon-delivery-new\"*)",
+      "Bash(ls \"d:/AN-G-WEBSITE/new_vedio\"*)",
+      "Bash(ls \"d:/AN-G-WEBSITE/assets/city-mosul\"*)"
+    ]
+  }
+}
