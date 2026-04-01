@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-lang="en">
+<html lang="ar" dir="rtl" data-lang="ar">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,8 @@
     [dir="rtl"] body { font-family: var(--font-ar); }
 
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { overflow-x: hidden; }
 
     body {
       font-family: var(--font);
@@ -313,7 +314,7 @@
     /* ── FEATURES ───────────────────────────── */
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 1fr));
       gap: 24px;
     }
 
@@ -911,6 +912,9 @@
   }, { threshold: 0.12 });
 
   document.querySelectorAll('.feature-card, .city-card, .join-card').forEach(el => io.observe(el));
+
+  // Always load Arabic as default
+  applyLang('ar');
 </script>
 
 </body>
